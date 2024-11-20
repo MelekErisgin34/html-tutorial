@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulama</title>
+</head>
+<body>
+    <h1> Form Uygulama3</h1>
+    <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post" >
+
+        <label for="ad">Adınız:</label>
+        <input type="text " placeholder="Adiniz girin"  size="20" maxlength="20" id="ad" name="ad" required ><br><br>
+         
+        <label> Soyadınız :<input type="text" placeholder="Soyadınız girin" id="soyad" name="soyad" required></label><br><br>
+
+        <label> Dogum tarihi: <input type="datetime" value="2015-06-20" min="2000-01-01 " max="2024-01-01" id="Dogum tarihi" name="Dogum tarihi"></label><br><br>
+
+        <label> sifreniz: <input type="password" minlength="8" maxlength="16" id="Sifre" name="Sifre" required></label><br><br>
+
+        <label> Maasiniz: <input type="number" min="5000" max="100000" step="500" id="Maasiniz" name="Maasiniz"></label><br><br>
+
+        <label >E-posta: <input type="email" id="e posta" placeholder="melek@gmail.com" autocomplete="email" name="e posta"></label><br><br>
+
+        <label >Hobiniz: <input type="text" id="hobi" name="hobi" list="hobiler"></label><br><br>
+        <datalist>
+            <option value="müzik "></option>
+            <option value="uyumak"></option>
+            <option value="resim cizmek "></option>
+        </datalist>
+
+        <label>Kullanici Adınız<input type="text" id="Kullanici Adiniz"  value="balikdori" readonly name="Kullanici Adiniz"></label><br><br>
+
+        <label >Kredi Notu: <input type="text" id="Kredi Notu"disabled value="70"name="Kredi Notu"></label><br><br>
+
+        <label >Öz gecmis Dosya: <input type="file" multiple  id="Öz gecmis Dosya" name="Öz gecmis Dosya"></label><br><br>
+
+        <button type="submit">Kaydet</button>
+
+        <button type="submit">temizle </button>
+    </form>
+</body>
+</html>
